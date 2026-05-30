@@ -62,3 +62,9 @@ function speedConvert(){
     document.getElementById('value2').value = result.toFixed(2);
 
 }
+
+function reset(){
+    document.getElementById('value').value = '';
+    document.getElementById('value2').value = '';
+    document.getElementById('result').textContent = '';
+}

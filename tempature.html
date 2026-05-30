@@ -34,11 +34,10 @@
     <div>
         <h1> Tempature conversion</h1>
         <label for ="value">C: </label>
-        <input type = "number" id="value" placeholder="Enter a number" step="any">
+        <input onclick="reset()" type = "number" id="value" placeholder="Enter a number" step="any">
         <label for ="value">F: </label>
-        <input type = "number" id="value" placeholder="Enter a number" step="any">
+        <input onclick="reset()" type = "number" id="value" placeholder="Enter a number" step="any">
         <button onclick="tempConvert()">Convert</button>
-        <div class="result" id="result"></div>
     </div>
     <script src="converter.js"></script>
 </body>
