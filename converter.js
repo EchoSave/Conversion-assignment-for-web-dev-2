@@ -31,12 +31,12 @@ function weightConvert(){
     }
     if(inputValue2 != ''){
         const value = parseFloat(inputValue2);
-        const result = value / 2.20462262;
+        const result = value * 2.20462262;
         document.getElementById('value').value = result.toFixed(2);
         return;
     }
     const value = parseFloat(inputValue);
-    const result = value * 2.20462262;
+    const result = value / 2.20462262;
     document.getElementById('value2').value = result.toFixed(2);
 }
 
