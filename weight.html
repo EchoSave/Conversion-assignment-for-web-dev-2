@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header class="bg-blue-300">
+  <header class="bg-blue-300">
     <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row sm:items-center">
 
       <h1 class="text-2xl font-bold text-center sm:text-left">
@@ -27,10 +27,12 @@
 
     <div class="px-4 py-2">
         <h1 class="text-xl font-bold text-gray-800"> Weight conversion</h1>
-        <label for ="value">Enter value: </label>
-        <input type = "number" id="value" placeholder="Enter a number" step="any">
+        <label for ="value">lbs: </label>
+        <input onclick="reset()" type = "number" id="value" placeholder="Enter a number" step="any">
+        <label for ="value2">kg: </label>
+        <input onclick="reset()" type = "number" id="value2" placeholder="Enter a number" step="any">
         <button onclick="weightConvert()">Convert</button>
-        <div class="result" id="result"></div>
+
     </div>
     <script src="converter.js"></script>
 </body>

@@ -27,10 +27,11 @@
 
     <div class="px-4 py-2">
         <h1 class="text-xl font-bold text-gray-800"> Speed conversion</h1>
-        <label for ="value">Enter value: </label>
-        <input type = "number" id="value" placeholder="Enter a number" step="any">
+        <label for ="value">kmph: </label>
+        <input onclick="reset()" type = "number" id="value" placeholder="Enter a number" step="any">
+        <label for ="value2">mph: </label>
+        <input onclick="reset()" type = "number" id="value2" placeholder="Enter a number" step="any">
         <button onclick="speedConvert()">Convert</button>
-        <div class="result" id="result"></div>
     </div>
     <script src="converter.js"></script>
 </body>
