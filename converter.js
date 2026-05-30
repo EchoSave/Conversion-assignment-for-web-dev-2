@@ -2,46 +2,63 @@ function tempConvert(){
     const inputValue = document.getElementById('value').value.trim();
     const resultDiv = document.getElementById('result');
     
-    if(inputValue === '' || isNaN(inputValue)){
+    if((inputValue === '' || isNaN(inputValue)) && (inputValue2 === '' || isNaN(inputValue2))){
         resultDiv.textContent = "❌ Please enter a valid number.";
         resultDiv.style.color = "red";
         return;
     }
-    
+    if(inputValue2 != ''){
+        const value = parseFloat(inputValue2);
+        const result = value / 33.8;
+        document.getElementById('value').value = result.toFixed(2);
+        return;
+    }
     const value = parseFloat(inputValue);
     const result = value * 33.8;
-    resultDiv.textContent = `${value}°C = ${result.toFixed(2)}°F`;
-    resultDiv.style.color = "green";
+    document.getElementById('value2').value = result.toFixed(2);
 }
 
 function weightConvert(){
     const inputValue = document.getElementById('value').value.trim();
-    const resultDiv = document.getElementById('result');
+    const inputValue2 = document.getElementById('value2').value.trim();
+    // const resultDiv = document.getElementById('result');
     
-    if(inputValue === '' || isNaN(inputValue)){
+    if((inputValue === '' || isNaN(inputValue)) && (inputValue2 === '' || isNaN(inputValue2))){
         resultDiv.textContent = "❌ Please enter a valid number.";
         resultDiv.style.color = "red";
         return;
     }
-    
+    if(inputValue2 != ''){
+        const value = parseFloat(inputValue2);
+        const result = value / 2.20462262;
+        document.getElementById('value').value = result.toFixed(2);
+        return;
+    }
     const value = parseFloat(inputValue);
     const result = value * 2.20462262;
-    resultDiv.textContent = `${value} kg = ${result.toFixed(2)} lbs`;
-    resultDiv.style.color = "green";
+    document.getElementById('value2').value = result.toFixed(2);
 }
+
 
 function speedConvert(){
     const inputValue = document.getElementById('value').value.trim();
+    const inputValue2 = document.getElementById('value2').value.trim();
     const resultDiv = document.getElementById('result');
     
-    if(inputValue === '' || isNaN(inputValue)){
+    if((inputValue === '' || isNaN(inputValue)) && (inputValue2 === '' || isNaN(inputValue2))){
         resultDiv.textContent = "❌ Please enter a valid number.";
         resultDiv.style.color = "red";
+        return;
+    }
+    if(inputValue2 != ''){
+        const value = parseFloat(inputValue2);
+        const result = value / 0.62137119;
+        document.getElementById('value').value = result.toFixed(2);
         return;
     }
     
     const value = parseFloat(inputValue);
     const result = value * 0.62137119;
-    resultDiv.textContent = `${value} km/h = ${result.toFixed(2)} mph`;
-    resultDiv.style.color = "green";
+    document.getElementById('value2').value = result.toFixed(2);
+
 }
