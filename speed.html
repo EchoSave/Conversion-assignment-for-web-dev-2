@@ -33,11 +33,10 @@
     <div>
         <h1> Speed conversion</h1>
         <label for ="value">kmph: </label>
-        <input type = "number" id="value" placeholder="Enter a number" step="any">
+        <input onclick="reset()" type = "number" id="value" placeholder="Enter a number" step="any">
         <label for ="value2">mph: </label>
-        <input type = "number" id="value2" placeholder="Enter a number" step="any">
+        <input onclick="reset()" type = "number" id="value2" placeholder="Enter a number" step="any">
         <button onclick="speedConvert()">Convert</button>
-        <div class="result" id="result"></div>
     </div>
     <script src="converter.js"></script>
 </body>
