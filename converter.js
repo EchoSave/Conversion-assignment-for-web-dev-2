@@ -9,7 +9,7 @@ function tempConvert(){
     }
     
     const value = parseFloat(inputValue);
-    const result = value * 33.8;
+    const result = (value * 9/5) + 32;
     resultDiv.textContent = `${value}°C = ${result.toFixed(2)}°F`;
     resultDiv.style.color = "green";
 }
