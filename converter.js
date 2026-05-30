@@ -1,5 +1,6 @@
 function tempConvert(){
     const inputValue = document.getElementById('value').value.trim();
+    const inputValue2 = document.getElementById('value2').value.trim();
     const resultDiv = document.getElementById('result');
     
     if((inputValue === '' || isNaN(inputValue)) && (inputValue2 === '' || isNaN(inputValue2))){
@@ -9,12 +10,12 @@ function tempConvert(){
     }
     if(inputValue2 != ''){
         const value = parseFloat(inputValue2);
-        const result = value / 33.8;
+        const result = (value - 32) * 5/9;
         document.getElementById('value').value = result.toFixed(2);
         return;
     }
     const value = parseFloat(inputValue);
-    const result = value * 33.8;
+    const result = (value * 9/5) + 32;
     document.getElementById('value2').value = result.toFixed(2);
 }
 
@@ -30,12 +31,12 @@ function weightConvert(){
     }
     if(inputValue2 != ''){
         const value = parseFloat(inputValue2);
-        const result = value / 2.20462262;
+        const result = value * 2.20462262;
         document.getElementById('value').value = result.toFixed(2);
         return;
     }
     const value = parseFloat(inputValue);
-    const result = value * 2.20462262;
+    const result = value / 2.20462262;
     document.getElementById('value2').value = result.toFixed(2);
 }
 
