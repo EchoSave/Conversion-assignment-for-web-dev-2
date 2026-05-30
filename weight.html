@@ -11,9 +11,7 @@
   <header class="bg-blue-300">
     <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row sm:items-center">
 
-      <h1 class="text-2xl font-bold text-center sm:text-left">
-        Conversion Therapy
-      </h1>
+      <h1><a href="./index.html" class="text-2xl font-bold text-center sm:text-left">Conversion Therapy</a></h1>
 
       <nav class="mt-3 sm:mt-0 sm:ml-auto">
         <ul class="flex flex-col sm:flex-row gap-3 sm:gap-5 text-center">
@@ -25,13 +23,13 @@
     </div>
   </header>
 
-    <div class="px-4 py-2">
-        <h1 class="text-xl font-bold text-gray-800"> Weight conversion</h1>
-        <label for ="value">lbs: </label>
+    <div class="px-4 py-2 text-center bg-blue-100">
+        <h1 class="text-xl font-bold text-gray-800"> Weight Conversion</h1>
+        <label for ="value">lbs : </label>
         <input onclick="reset()" type = "number" id="value" placeholder="Enter a number" step="any">
-        <label for ="value2">kg: </label>
+        <label for ="value2">kg : </label>
         <input onclick="reset()" type = "number" id="value2" placeholder="Enter a number" step="any">
-        <button onclick="weightConvert()">Convert</button>
+        <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-1 px-2 rounded border-2 border-gray-500" onclick="weightConvert()">Convert</button>
 
     </div>
     <script src="converter.js"></script>
